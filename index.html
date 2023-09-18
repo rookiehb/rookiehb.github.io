@@ -20,18 +20,19 @@
               <p style="text-align:center">
                 <name>Han Wang「王涵」</name>
               </p>
-              <p>I am Han Wang, a third year undergraudate student majoring in EE at <a href="https://www.zju.edu.cn/english/"> Zhejiang University</a>.
+              <p>I am Han Wang, a senoir undergraudate student majoring in electronic engineering at <a href="https://www.zju.edu.cn/english/"> Zhejiang University</a>.
               </p>
-              <p> I used to work with <a href="https://person.zju.edu.cn/en/wufei">Prof. Fei Wu</a> on a national SRTP program in Zhejiang Univerisity DCD lab. I also interned at <a href="https://nus.edu.sg/"> National 
-                University of Singapore</a> NExT++ lab, working with my mentor <a href="https://anzhang314.github.io/">An Zhang</a> and my advisor <a href="https://www.chuatatseng.com/">Prof. Chua Tat-Seng</a>. 
-                Currently I'am working as a remote summer intern in <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, under the supervision of <a href="https://pages.cs.wisc.edu/~sharonli/">Sharon Li</a>.
+              <p> I used to work with <a href="https://person.zju.edu.cn/en/wufei">Prof. Fei Wu</a> in Zhejiang Univerisity DCD lab. I also interned at <a href="https://nus.edu.sg/"> National 
+                University of Singapore</a> NExT++ lab, advised by my mentor <a href="https://anzhang314.github.io/">Dr. An Zhang</a> and advisor <a href="https://www.chuatatseng.com/">Prof. Tat-Seng Chua</a>. 
+                Currently I'am working as a remote summer intern in <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, under the supervision of <a href="https://pages.cs.wisc.edu/~sharonli/">Prof. Sharon Li</a>.
               </p>
-
 
               <p style="text-align:center">
                 <a href="mailto:hanwang3301@gmail.com" target="_blank">Email</a> &nbsp|&nbsp
-                <!-- <a href="data/Resume_Zijin.pdf" target="_blank" >Resume</a> &nbsp|&nbsp -->
-                <a href="https://github.com/rookiehb" target="_blank" >Github</a> &nbsp|&nbsp
+                <a href="./docs/cv.pdf" target="_blank" >CV</a> &nbsp|&nbsp
+                <a href="https://scholar.google.com/citations?user=5C6OSIgAAAAJ&hl=en" target="_blank" >Google Scholar</a> &nbsp|&nbsp
+                <a href="https://github.com/rookiehb" target="_blank" >Github</a> 
+                <!-- &nbsp|&nbsp -->
               </p>
             </td>
             <td style="padding:2.5%;width:100%;max-width:100%">
@@ -43,14 +44,14 @@
         <!-- Research -->
         <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
           <tbody>
-                <heading>Research</heading>
+                <heading>Research Interests</heading>
           <tr>
               <p>
-                My research interests lie in ML. I am interested in developing a trustworthy AI model with:
+                I have broad interests in ML. Specifically, I am passionate about developing a trustworthy AI model with:
                 <ul>
                   <li><b>Interpretability</b>: Understanding how AI models make decisions is essential for their acceptance. What I hope is to understand and quantitate the model's inference mechanism with strong theoretical guarantees, transforming a block-box model into explainable AI.</li>
-                  <li><b>Generalization</b>: An oracle model should utilize as minimum data as possible while enjoying super robustness to the unseen world, which requires domain-invariance and disentanglement.</li>
-                  <li><b>Reliability</b>: Models employed in real applications always encounter data that were not taught during training or suffer from malicious attacks, especially in the context of LLM today. This emphasizes the significance of reliable AI.</li>
+                  <li><b>Generalization</b>: An oracle model should utilize as less data as possible while enjoying super robustness to the unseen world, which requires domain-invariance and disentanglement.</li>
+                  <li><b>Reliability</b>: Models employed in real applications always encounter data that were not taught during training or suffer from malicious attacks, especially in the context of LLM today. This emphasizes the significance of reliable and safe AI.</li>
                 </ul>
                 <!-- my research focuses on building reliable AI systems which could be deployed in real application. 
                 My topics of interests are including OOD generalization/detection, open-world challenge, and robust/explainable AI in computer vision and multi-modality. -->
@@ -64,23 +65,32 @@
           <br>
             <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
             <tbody>
-                <heading>Selected Publications</heading>(* equal contribution)
+                <heading>Publications</heading> (* equal contribution)
             
-            <tr>
-              <td width="100%" valign="middle">
+
+
+            <tr class="spaceUnder">
+              <!-- <td width="30%" style="padding-right: 120px"> -->
+              <td width="50%" style="padding-right: 30px">
+                <img src="./images/udg_framework.png" width="400" style="display: block; margin-left: auto; margin-right: auto;">
+              </td>
+
+              <td width="50%;">
                 <div class="title">
-                 <b>Disentangling Masked Autoencoders for Unsupervised Domain Generalization</b>
-                </div>
-                <div class="authors">
-                  An Zhang*, Han Wang*, Xiang Wang, Wei Ji, Yicong Li, Tat-Seng Chua
-                </div>
-                <div class="venue">
-                    <b>under review</b>
-                </div>
+                  <a href="https://rookiehb.github.io/"><b>Disentangling Masked Autoencoders for Unsupervised Domain Generalization</b></a>
+                 </div>
+                 <div class="authors">
+                   An Zhang*, <b>Han Wang*</b>, Xiang Wang, Wei Ji, Yicong Li, Tat-Seng Chua
+                 </div>
+                 <div class="venue">
+                  <em><b>Under Review</b></em>
+                 </div>
+                 <p></p>
+                 <p>We devise a disentangling MAE framework to discover the disentangled representations that faithfully reveal the intrinsic features and superficial variations in an unsupervised manner.</p>
               </td>
             </tr>
 
-            <tr>
+            <!-- <tr>
               <td width="100%" valign="middle">
                 <div class="title">
                   <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_WINNER_Weakly-Supervised_hIerarchical_decompositioN_and_aligNment_for_Spatio-tEmporal_Video_gRounding_CVPR_2023_paper.pdf"><b>WINNER: Weakly-supervised hIerarchical decompositioN and aligNment for spatio-tEmporal video gRounding</b></a>
@@ -92,7 +102,32 @@
                    <b>CVPR 2023</b>
                 </div>
               </td>
+            </tr> -->
+
+            <tr class="spaceUnder">
+              <!-- <td width="30%" style="padding-right: 120px"> -->
+              <td width="50%" style="padding-right: 30px">
+                <!-- <img src="./images/visual_knowledge.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;"> -->
+                <img src="./images/visual_knowledge.png" width="400" height="300" style="display: block; margin-left: auto; margin-right: auto;">
+              </td>
+
+              <td width="50%;">
+                <div class="title">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_WINNER_Weakly-Supervised_hIerarchical_decompositioN_and_aligNment_for_Spatio-tEmporal_Video_gRounding_CVPR_2023_paper.pdf"><b>WINNER: Weakly-supervised Hierarchical Decomposition and AligNment for Spatio-temporal Video Grounding</b></a>
+                 </div>
+                 <div class="authors">
+                  Mengze Li*, <b>Han Wang*</b>, Wenqiao Zhang, Jiaxu Miao, Zhou Zhao, Shengyu Zhang, Wei Ji, Fei Wu
+                 </div>
+                 <div class="venue">
+                  <em><b>CVPR 2023</b></em>
+                 </div>
+                 <p></p>
+                 <p>We introduce hierarchical video language decomposition and alignment for the spatio-temporal video grounding task to alleviate the spurious correlation, which contains the cross-model hierarchical understanding and decomposition structure alignment.</p>
+              </td>
             </tr>
+
+
+
               
             </tbody></table>
           <br>
@@ -113,7 +148,7 @@
                 <tr>
                   <td width="90%">
                     <b>Zhejiang University</b>, China<br>
-                    B.Eng. in EE • Aug. 2020 to June 2024
+                    B.Eng. in EE • Aug. 2020 to June 2024 (expected)
                   </td>
                   <td width="10%">
                     <img src="./images/zju-logo.png" width="100%" style="display: flex; justify-content: center;">
@@ -128,7 +163,7 @@
           <!-- Experience -->
           <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
           <tbody><tr>
-              <heading>Experiences</heading>
+              <heading>Research Experiences</heading>
 
               <tr>
                 <td width="100%" valign="middle">
@@ -156,8 +191,8 @@
                         <tr>
                           <td width="90%">
                             <a href="https://www.nextcenter.org/"><b>NExT++ Lab</b></a>, <b>National University of Singapore</b>, Singapore<br>
-                            Research Intern • Sept. 2022 to Aug. 2023 <br>
-                            Advisor: <a href="https://www.chuatatseng.com/">Prof. Chua Tat-Seng</a>
+                            Research Intern • Sept. 2022 to present <br>
+                            Advisor: <a href="https://anzhang314.github.io/">Dr. An Zhang</a> & <a href="https://www.chuatatseng.com/">Prof. Tat-Seng Chua</a>
                           </td>
                           <td width="10%">
                             <img src="./images/nus-logo.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
@@ -198,7 +233,7 @@
                 Website source from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
               </p>
               <p style="text-align:right;font-size:small;">
-              Last Updated: Aug. 16th, 2023.
+              Last Updated: Sept. 18th, 2023.
               </p>
             </td>
           </tr>
