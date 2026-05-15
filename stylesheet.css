@@ -129,3 +129,395 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Publication filter buttons */
+.pub-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0 18px 0;
+}
+
+.filter-btn {
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+  background: #f6f8fa;
+  color: #333;
+  padding: 7px 16px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.filter-btn:hover {
+  background: #eaeef2;
+  color: #1772d0;
+}
+
+.filter-btn.active {
+  background: #1772d0;
+  border-color: #1772d0;
+  color: white;
+}
+
+.pub-list li.is-hidden {
+  display: none;
+}
+
+/* Inline publication heading filter */
+.pub-heading-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px 0;
+}
+
+.pub-filter-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.pub-filter-inline .filter-btn {
+  padding: 5px 13px;
+  font-size: 15px;
+}
+
+.filter-separator {
+  color: #777;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contribution-note {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Research interests section */
+.research-section {
+  margin: 8px 0 28px 0;
+  padding: 0 10px;
+}
+
+.research-intro {
+  margin: 12px 0 14px 0;
+  line-height: 1.55;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.research-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fbfdff;
+  padding: 14px 16px;
+}
+
+.research-card-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.research-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.45;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.research-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Page-level layout and consistent section frames */
+body {
+  margin: 0;
+  padding: 22px 12px 28px 12px;
+  background: #f7f8fb;
+  color: #222;
+}
+
+body > table {
+  background: transparent;
+}
+
+.section-card {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 16px 0;
+  padding: 22px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.045);
+}
+
+.section-card heading {
+  display: block;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.hero-section {
+  margin-top: 10px;
+  padding: 18px 20px;
+}
+
+.hero-section table {
+  width: 100%;
+}
+
+.hero-section img {
+  border-radius: 14px;
+}
+
+.research-section {
+  padding: 22px 24px;
+  margin: 16px 0;
+}
+
+.research-intro {
+  margin: 4px 0 16px 0;
+  line-height: 1.6;
+}
+
+.research-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fbfdff;
+  padding: 16px 18px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-1px);
+  border-color: #d0d7de;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.pubs {
+  padding: 22px 24px;
+}
+
+.pub-heading-row {
+  margin-bottom: 16px;
+}
+
+.pub-list {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.pub-list li {
+  padding: 12px 0 14px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0 !important;
+}
+
+.title {
+  line-height: 1.35;
+}
+
+.authors,
+.venue,
+.link {
+  line-height: 1.45;
+  margin-top: 2px;
+}
+
+.info-section {
+  padding: 22px 24px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid #edf0f4;
+}
+
+.info-card:first-of-type {
+  border-top: none;
+  padding-top: 4px;
+}
+
+.info-text {
+  line-height: 1.45;
+}
+
+.info-text span,
+.contribution-note {
+  color: #555;
+}
+
+.info-logo {
+  max-width: 54px;
+  max-height: 54px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.info-section p {
+  margin: 10px 0;
+  line-height: 1.55;
+}
+
+.footer-section {
+  margin-top: 8px;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  color: #666;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 10px 8px 20px 8px;
+  }
+
+  .section-card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .hero-section {
+    padding: 14px 12px;
+  }
+
+  .pub-heading-row {
+    align-items: flex-start;
+  }
+
+  .info-card {
+    align-items: flex-start;
+  }
+
+  .info-logo {
+    max-width: 46px;
+    max-height: 46px;
+  }
+}
+
+
+/* Tighten the transition from Research Interests to Projects */
+.research-section {
+  margin-bottom: 8px;
+}
+
+.research-section + .pubs {
+  margin-top: 8px;
+}
+
+/* Keep the filter buttons and "Projects" title on the same visual line */
+.pub-heading-row {
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.pub-heading-row heading {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.pub-filter-inline {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.pub-filter-inline .filter-btn {
+  line-height: 1;
+  padding: 4px 11px;
+}
+
+.filter-separator {
+  line-height: 1;
+}
+
+.contribution-note {
+  white-space: nowrap;
+}
+
+/* The gray dividers already separate papers, so remove list bullets and extra indent. */
+.pub-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-top: 4px;
+}
+
+.pub-list li {
+  margin-bottom: 0 !important;
+  padding: 13px 0 13px 0;
+}
+
+@media (max-width: 640px) {
+  .pub-heading-row {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .contribution-note {
+    white-space: normal;
+  }
+}
+
+/* Consistent spacing between all homepage blocks */
+.section-card {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-section,
+.research-section,
+.pubs,
+.info-section {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.research-section + .pubs {
+  margin-top: 12px;
+}
+
+.footer-section {
+  margin-top: 12px;
+}
